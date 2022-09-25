@@ -10,7 +10,7 @@ function onChangeTab(event){
     }
     else {
         history.pushState(null, null, '/web/signup')
-    }
+    } 
 }
 
 menuHome.addEventListener("click", onChangeTab);
