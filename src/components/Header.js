@@ -4,12 +4,13 @@ const menuHome = document.getElementById(menu_home);
 const menuSignup = document.getElementById(menu_signup);
 
 function onChangeTab(event){
-    event.preventDefault();
     if (event.target.id === menu_home){
-        history.pushState(null, null, '/web/');
+        window.location.href='../../home.html';
+        // history.pushState(null, null, '/web/');
     }
     else {
-        history.pushState(null, null, '/web/signup')
+        window.location.href='../../signup.html';
+        // history.pushState(null, null, '/web/signup')
     } 
 }
 
